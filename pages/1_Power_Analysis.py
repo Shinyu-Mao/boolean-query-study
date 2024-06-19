@@ -1,17 +1,46 @@
 import streamlit as st 
 import pandas as pd
 
-st.balloons()
-st.markdown("# Data Evaluation App")
+import statsmodels.stats.power as smp
 
-st.write("We are so glad to see you here. ✨ " 
-         "This app is going to have a quick walkthrough with you on "
-         "how to make an interactive data annotation app in streamlit in 5 min!")
+# st.balloons()
+# page 1
+st.set_page_config(page_title="Power Analysis")
+st.markdown("# Power Analysis")
+st.sidebar.header("Power Analysis")
 
-st.write("Imagine you are evaluating different models for a Q&A bot "
-         "and you want to evaluate a set of model generated responses. "
-        "You have collected some user data. "
-         "Here is a sample question and response set.")
+st.markdown("# User study Power Analysis")
+
+
+st.write("This is an interactive dashboard for explorating sample sizes for the user study."
+         "First we show a simple calculator."
+         )
+with st.sidebar:
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.write("effect size")
+        effect_size = st.slider("effect size", min_value=0.1,max_value=1.0,step=0.1)
+
+    with col2:
+        st.write("alpha")
+        alpha = st.radio(
+            "Select significance",
+            key = "alpha",
+            options = [0.01, 0.05, 0.1]
+        )
+
+    with col3:
+        st.write("Power")
+        power = st.slider("power",min_value=0.1, max_value=1.0, step=0.1)
+
+
+    def power_analysis(effect_size, alpha, power):
+        analysis = smp.TTestIndPower()
+        sample_size = analysis.solve_power(effect_size=effect_size, alpha=alpha, power=power)
+        return sample_size
+
+    st.write(f"Required sample size per group: {int(power_analysis(effect_size,alpha,power))}")
 
 data = {
     "Questions": 
