@@ -1,0 +1,22 @@
+[
+    {
+        "human": "(\"Caffeine\"[All Fields] OR \"Caffeinated\"[All Fields] OR \"Energy drinks\"[All Fields] OR \"Energy drink\"[All Fields] OR \"Coffee\"[All Fields]) AND (\"Balance\"[All Fields] OR \"Postural stability\"[All Fields] OR \"Postural sway\"[All Fields] OR \"Static balance\"[All Fields] OR \"Posture\"[All Fields] OR \"Postural control\"[All Fields] OR \"Standing\"[All Fields] OR \"Upright stance\"[All Fields])",
+        "ai": "(\"Caffeine\"[All Fields] OR \"Caffeinated\"[All Fields] OR \"Energy drinks\"[All Fields] OR \"Energy drink\"[All Fields] OR \"Coffee\"[All Fields]) AND (\"Equilibrium\"[All Fields] OR \"Postural stability\"[All Fields] OR \"Postural sway\"[All Fields] OR \"Static balance\"[All Fields] OR \"Posture\"[All Fields] OR \"Postural control\"[All Fields] OR \"Standing\"[All Fields] OR \"Upright stance\"[All Fields])"
+    },
+    {
+        "human": "(\"Vitamin D\"[All Fields] OR \"Cholecalciferol\"[All Fields]) AND (\"Bone density\"[All Fields] OR \"Bone mass\"[All Fields] OR \"Osteoporosis\"[All Fields])",
+        "ai": "(\"Vitamin D\"[All Fields] OR \"Cholecalciferol\"[All Fields]) AND (\"Bone strength\"[All Fields] OR \"Bone mass\"[All Fields] OR \"Osteoporosis\"[All Fields])"
+    },
+    {
+        "human": "(\"Exercise\"[All Fields] OR \"Physical activity\"[All Fields]) AND (\"Mental health\"[All Fields] OR \"Depression\"[All Fields] OR \"Anxiety\"[All Fields])",
+        "ai": "(\"Exercise\"[All Fields] OR \"Physical activity\"[All Fields]) AND (\"Mental well-being\"[All Fields] OR \"Depression\"[All Fields] OR \"Anxiety\"[All Fields])"
+    },
+    {
+        "human": "(\"Diabetes\"[All Fields] OR \"Blood sugar\"[All Fields]) AND (\"Heart disease\"[All Fields] OR \"Cardiovascular\"[All Fields] OR \"Heart attack\"[All Fields])",
+        "ai": "(\"Diabetes\"[All Fields] OR \"Blood glucose\"[All Fields]) AND (\"Heart disease\"[All Fields] OR \"Cardiovascular\"[All Fields] OR \"Myocardial infarction\"[All Fields])"
+    },
+    {
+        "human": "(\"Sleep\"[All Fields] OR \"Insomnia\"[All Fields]) AND (\"Cognitive function\"[All Fields] OR \"Memory\"[All Fields] OR \"Attention\"[All Fields])",
+        "ai": "(\"Sleep\"[All Fields] OR \"Insomnia\"[All Fields]) AND (\"Cognitive performance\"[All Fields] OR \"Memory\"[All Fields] OR \"Attention\"[All Fields])"
+    }
+]
